@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kyrgyz Recipes</title>
+    </head>
+    <body>
+        <h1>Today's Recipe</h1>
+        <p id="recipe"></p>
+        <script>
+            let time = "Sunset"; // Change to "Sunset" for kuurdak
+            if (time === "Noon") {
+      document.getElementById("recipe").innerHTML =
+        "Lunch: Kyrgyz Plov<br>" +
+        "1. Cut meat, onions, and carrots<br>" +
+        "2. Fry meat in oil until brown<br>" +
+        "3. Add onions and cook until soft<br>" +
+        "4. Add carrots, then rice on top<br>" +
+        "5. Pour hot water and simmer until rice is cooked";
+    } else if (time === "Sunset") {
+      document.getElementById("recipe").innerHTML =
+        "Dinner: Kyrgyz Kuurdak<br>" +
+        "1. Cut meat, onions, and potatoes<br>" +
+        "2. Fry meat until golden<br>" +
+        "3. Add onions and stir<br>" +
+        "4. Add potatoes and mix<br>" +
+        "5. Cook until everything is soft and ready";
+    } else {
+      document.getElementById("recipe").innerHTML = "No recipe available for this time.";
+    }
+  </script>
+
+</body>
+</html>
